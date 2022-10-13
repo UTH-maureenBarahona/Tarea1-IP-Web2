@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limitando Caracteres - Maureen Barahona</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-text">
+    <label>Ingrese la cantidad máxima a escribir:</label>
+    <input id="digMax" type="text" value="" onkeyup="document.getElementById('limitMax').innerHTML=Numeros(this.value);this.value=Numeros(this.value)"/>
+    </div>
+   
+    <div class="input-box">
+      <textarea placeholder="Escriba una frase" required></textarea>
+      <span class="title">Frase</span>
+      <div class="characters">
+        <span class="min_num">0</span>
+        <span id="limitMax" class="limit_num">/100</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

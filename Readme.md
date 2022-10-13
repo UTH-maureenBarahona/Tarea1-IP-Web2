@@ -12,7 +12,7 @@
 
 ## :memo: Licencia
 
-Este proyecto tiene licencia MIT. Vea el archivo [LICENSE](LICENSE.md) para mas detalles.
+Este proyecto tiene licencia MIT. Vea el archivo [LICENSE](Readme.md) para mas detalles.
 
 ---
 
