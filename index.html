@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="input-text">
-    <label>Ingrese la cantidad máxima a escribir:</label>
-    <input id="digMax" type="text" value="" onkeyup="document.getElementById('limitMax').innerHTML=Numeros(this.value);this.value=Numeros(this.value)"/>
+    <div id="div1" class="input-text">
+      <label>Ingrese la cantidad máxima a escribir:</label>
+      <input
+        id="digMax"
+        type="text"
+        value=""
+        onkeyup="document.getElementById('limitMax').innerHTML=Numeros(this.value);this.value=Numeros(this.value)"
+      />
     </div>
-   
-    <div class="input-box">
+
+    <div id="div2" class="input-box">
       <textarea placeholder="Escriba una frase" required></textarea>
       <span class="title">Frase</span>
       <div class="characters">
         <span class="min_num">0</span>
         <span id="limitMax" class="limit_num">/100</span>
       </div>
+    </div>
+    <div class="input-text">
+      <button onclick="showhide('div1')" class="btn success">Mostrar/Ocultar Input</button>
+      <button onclick="showhide('div2')" class="btn info">Mostrar/Ocultar Text</button>
     </div>
     <script src="script.js"></script>
   </body>

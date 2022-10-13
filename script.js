@@ -29,3 +29,12 @@ function Numeros(string) {
   return out;
 }
 
+function showhide(string) {
+    var x = document.getElementById(string);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
