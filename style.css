@@ -15,7 +15,7 @@ body {
 }
 .input-text {
   position: relative;
-  height: 160px;
+  height: 200px;
   width: 560px;
   background: #fff;
   padding: 30px;
@@ -25,7 +25,7 @@ body {
 
 .input-box {
   position: relative;
-  height: 160px;
+  height: 200px;
   width: 560px;
   background: #fff;
   padding: 30px;
