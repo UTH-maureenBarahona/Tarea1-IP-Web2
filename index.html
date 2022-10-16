@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+   
     <div id="div1" class="input-text">
       <label>Ingrese la cantidad máxima a escribir:</label>
       <input
@@ -16,6 +17,13 @@
         value=""
         onkeyup="document.getElementById('limitMax').innerHTML=Numeros(this.value);this.value=Numeros(this.value)"
       />
+      <h4>Alerta</h4>
+
+      <p>Dar click en la "x" para cerrar esta notificacion.</p>
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Reglas!</strong> Tiene una validacion para que solo permita numeros. Con colocar la cantidad maxima se actualiza tu entrada de datos
+      </div>
     </div>
 
     <div id="div2" class="input-box">
@@ -27,9 +35,13 @@
       </div>
     </div>
     <div class="input-text">
-      <button onclick="showhide('div1')" class="btn success">Mostrar/Ocultar Input</button>
-      <button onclick="showhide('div2')" class="btn info">Mostrar/Ocultar Text</button>
-      <button onclick="changeColor()"    class="btn warning">Cambiar fondo</button>
+      <button onclick="showhide('div1')" class="btn success">
+        Mostrar/Ocultar Input
+      </button>
+      <button onclick="showhide('div2')" class="btn info">
+        Mostrar/Ocultar Text
+      </button>
+      <button onclick="changeColor()" class="btn warning">Cambiar fondo</button>
     </div>
     <script src="script.js"></script>
   </body>
